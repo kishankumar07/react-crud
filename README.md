@@ -1,50 +1,99 @@
-# React + TypeScript + Vite
+# React CRUD with Context API
+## Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple User Management Application built using React (TypeScript), Context API, and Tailwind CSS. The app allows users to add, edit, delete, search, sort, and filter user data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+-  Add a new user with name, email, and address.
+-  Edit existing user details.
+-  Delete a user from the list. 
+- Search users by name or email.
+- Sort users by name or email (ascending/descending).
+-  Data persistence using localStorage 
+-  Fetch initial user data from JSONPlaceholder API.
+- Clean and responsive UI with Tailwind CSS.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React (TypeScript) – Component-based UI
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Context API – State management
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Axios – API requests
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Tailwind CSS – Styling
+
+- LocalStorage – Data persistence
+
+---
+
+
+
+
+
+## 🔗 Live Demo
+
+[https://react-crud-ivory-one.vercel.app/](https://react-crud-ivory-one.vercel.app/)
+
+
+
+
+## ⚙️ Installation & Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kishankumar07/react-crud.git
+  
+   cd react-crud
+   ```
+2. **Install the dependencies**
+    ```bash
+    yarn install  # or npm install
+    ```
+
+3. **Start the development Server**
+    ```bash
+    yarn dev  # or npm run dev
+    ```
+
+# API
+The app fetches user data from JSONPlaceholder API:
+
+- GET https://jsonplaceholder.typicode.com/users – Fetch initial users
+
+- POST https://jsonplaceholder.typicode.com/users – Add a user
+
+- DELETE https://jsonplaceholder.typicode.com/users/:id – Remove a user
+
+- PUT https://jsonplaceholder.typicode.com/users/:id – Update user details.
+
+# Usage
+- Add User: Fill in the form and click 'Add Item'.
+
+- Edit User: Click the 'Edit' button, modify details, and 'Update Item'.
+
+- Delete User: Click the 'Delete' button.
+
+- Search Users: Use the search bar to filter by name or email.
+
+- Sort Users: Click the sort button to toggle ascending/descending order.
+
+
+
+
+
+## 🔗 Links
+
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kishan-ta)
+[![medium](https://img.shields.io/badge/medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@kishantashok)
+[![portfolio](https://img.shields.io/badge/portfolio-FF5733?style=for-the-badge&logo=react&logoColor=white)](https://www.kishanta.in)
+
+
+
+
